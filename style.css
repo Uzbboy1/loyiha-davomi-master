@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700;800;900&display=swap');
+body{
+    overflow-x: hidden;
+    font-family: 'Jost', sans-serif;
+}
+.active-filter-btn{
+    background-color: var(--pink)!important;
+    color: #fff!important;
+    border-color: var(--pink)!important;
+}
+.filter-button-group .btn:hover{
+    color: #fff!important;
+}
+.collection-img span{
+    top: 20px;
+    right: 20px;
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+}
+.text-a{
+    font-family:'Great Vibes', cursive;
+}
+
+.pt-30 {
+    padding-top: 30px;
+}
+.items-product1 .single-items {
+    position: relative;
+}
+.items-product1 .single-items .items-img {
+    overflow: hidden;
+    position: relative;
+    z-index: 0;
+}
+.items-product1 .single-items .items-img::before {
+    background: -moz-linear-gradient(top, rgba(41,38,33,0) 0%, #292621 100%);
+    background: -webkit-linear-gradient(top, rgba(41,38,33,0) 0%, #292621 100%);
+    background: linear-gradient(to bottom, rgba(41,38,33,0) 0%, #292621 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00292621', endColorstr='#292621',GradientType=0 );
+}
+
+.items-product1 .single-items .items-img::before {
+    position: absolute;
+    width: 100%;
+    height: 40%;
+    bottom: 0;
+    content: "";
+    z-index: 1;
+}
+.items-product1 .single-items .items-img img {
+    -webkit-transition: all .4s ease-out 0s;
+    -moz-transition: all .4s ease-out 0s;
+    -ms-transition: all .4s ease-out 0s;
+    -o-transition: all .4s ease-out 0s;
+    transition: all .4s ease-out 0s;
+    width: 100%;
+    transform: scale(1);
+}
+.items-product1 .single-items .items-img img:hover{
+    transform: scale(1.02);
+}
+.items-product1 .single-items .items-details {
+    -webkit-transition: all .4s ease-out 0s;
+    -moz-transition: all .4s ease-out 0s;
+    -ms-transition: all .4s ease-out 0s;
+    -o-transition: all .4s ease-out 0s;
+    transition: all .4s ease-out 0s;
+    position: absolute;
+    left: 25px;
+    bottom: 0px;
+    text-align: center;
+    right: 0;
+}
+h4{
+    font-family: "Jost",sans-serif;
+    color: #292621;
+    margin-top: 0px;
+    font-style: normal;
+    font-weight: 500;
+    text-transform: normal;
+}
+.items-product1 .single-items .items-details h4 a {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 600;
+    display: inline-block;
+    margin-bottom: 9px;
+}
+.items-product1 .single-items .items-details .browse-btn {
+    -webkit-transition: all .4s ease-out 0s;
+    -moz-transition: all .4s ease-out 0s;
+    -ms-transition: all .4s ease-out 0s;
+    -o-transition: all .4s ease-out 0s;
+    transition: all .4s ease-out 0s;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.browse-btn {
+    color: #CEBD9C !important;
+    font-weight: 500;
+    font-size: 16px;
+    position: relative;
+    display: inline-block;
+}
+.browse-btn::before {
+    position: absolute;
+    content: "";
+    background: #CEBD9C;
+    width: 100%;
+    height: 2px;
+    bottom: -2px;
+}
+
+.items-product1 .single-items .items-img img:hover .browse-btn::before{
+    transform: translateY(10px);
+    bottom: 0;
+}
+a, button {
+    outline: medium none;
+    text-decoration: none;
+}
+
+/* ------------------------------------------------- */
+
+
+.slider {
+    margin-top: 20px;
+    padding: 80px 150px ;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background-color: #F3EAD8;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.slider .button{
+    width: 20px;
+    height: 100%;
+    cursor: pointer;
+}
+.slider .inside .elements{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.slider .inside{
+    padding: 20px;
+    overflow-x: hidden;
+    display: flex;
+
+    flex-direction: row;
+}
+.slider .inside .elements h2{
+    font-size: 34px;
+    margin-bottom: 40px;
+}
+.slider .inside .elements .text{
+    font-size: 22px;
+    margin-bottom: 32px;
+    padding: 0 200px;
+    text-align: center;
+}
+.slider .inside .elements .author{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.slider .inside .elements .author .author-info{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin-left: 10px;
+    flex-direction: column;
+}
+.slider .inside .elements .author .author-info span{
+    font-size: 14px;
+    font-weight: 500;
+}
+.slider .inside .elements .author .author-info p{
+    font-size: 16px;
+    color: #74706B;
+    font-weight: 500;
+}
+#second{
+    transform: translateX(110%);
+}
