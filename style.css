@@ -192,3 +192,29 @@ a, button {
     transform: translateX(110%);
 }
 
+
+
+.red-btn {
+    color: #292621;
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+
+ .sss {
+    color: #74706B;
+    margin-bottom: 11px;
+    display: block;
+    margin-top: 20px;
+}
+
+
+ .ah {
+    font-size: 22px;
+    line-height: 1.4;
+    margin-bottom: 12px;
+    font-weight: 500;
+    display: block;
+    color: #292621;
+}
+
